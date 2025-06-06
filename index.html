@@ -4,50 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <title>Hiten Wadhwa | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header data-aos="fade-down">
     <h1>Hiten Wadhwa</h1>
-    <p>Business Analyst | Data Enthusiast | Project Manager</p>
+    <p>Business & Data Analyst | Strategic Thinker | Project Driver</p>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-right">
     <h2>About Me</h2>
-    <p>I'm a business analyst passionate about data, analytics, and creating solutions that drive real impact. With experience at KPMG and strong academic credentials, I thrive at the intersection of insight and execution.</p>
+    <p>I’m a business analyst with 2+ years of experience in data-driven decision making, project coordination, and automation-led efficiency. Passionate about turning insights into actionable solutions across industries.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
-    <ul>
-      <li>Python | R | SQL</li>
-      <li>Power BI | Tableau | Excel</li>
-      <li>Project Management | Agile | JIRA</li>
-      <li>Machine Learning | Predictive Analytics</li>
+    <ul class="skills">
+      <li>Python</li>
+      <li>R</li>
+      <li>SQL</li>
+      <li>Power BI</li>
+      <li>Tableau</li>
+      <li>Project Management</li>
+      <li>Data Modeling</li>
+      <li>Machine Learning</li>
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="projects" data-aos="fade-left">
     <h2>Projects</h2>
-    <div class="project-card">
+    <div class="project">
       <h3>Capstone: Student Support Optimization</h3>
-      <p>Used BI tools to analyze student services utilization and propose actionable enhancements.</p>
+      <p>Analyzed student support service usage at Humber to identify gaps and create BI-driven action plans. Enhanced service visibility and optimized student experience using dashboards.</p>
     </div>
-    <div class="project-card">
+    <div class="project">
       <h3>Bank Marketing ML Model</h3>
-      <p>Built predictive model with >85% accuracy using logistic regression and random forest.</p>
+      <p>Built machine learning models (logistic regression, random forest) to predict term deposit subscriptions. Achieved over 85% precision-recall, reducing marketing cost by 20%.</p>
+    </div>
+    <div class="project">
+      <h3>GPA Calculator Program</h3>
+      <p>Automated GPA assignment for Humber Admissions using OOP. Reduced manual effort and improved accuracy, earning a top project score of 95%.</p>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <p>Email: hitenwadhwa33@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hitenwadhwa33" target="_blank">linkedin.com/in/hitenwadhwa33</a></p>
-    <p><a href="resume.pdf" download>Download My Resume</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/hitenwadhwa33" target="_blank">linkedin.com/in/hitenwadhwa33</a></p>
+    <a href="resume.pdf" download class="resume-button">Download My Resume</a>
   </section>
 
   <footer>
     <p>&copy; 2025 Hiten Wadhwa</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
